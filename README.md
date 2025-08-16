@@ -1,5 +1,4 @@
 
-
 ```markdown
 # 🚀 My First CI/CD Website with GitHub Actions
 
@@ -55,7 +54,7 @@ git commit -m "Initial commit with project files and workflow"
 **3️⃣ Connect Local Folder to GitHub**
 
 ```bash
-git remote add origin https://github.com/<your-username>/my-first-actions-demo.git
+git remote add origin https://github.com/SrinivasNaren/my-first-actions-demo.git
 git branch -M main
 git push -u origin main
 ```
@@ -98,13 +97,13 @@ my-first-actions-demo/
 ## 🌐 Live Demo
 
 💻 Check it out:
-[![Visit Site](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://<your-username>.github.io/my-first-actions-demo/)
+[![Visit Site](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://srinivasnaren.github.io/my-first-actions-demo/)
 
 ---
 
 ## ✅ Workflow Status
 
-![CI/CD](https://github.com/<your-username>/my-first-actions-demo/actions/workflows/deploy.yml/badge.svg)
+![CI/CD](https://github.com/SrinivasNaren/my-first-actions-demo/actions/workflows/deploy.yml/badge.svg)
 
 ---
 
@@ -137,6 +136,3 @@ my-first-actions-demo/
 * Update files and push → site updates automatically
 * Monitor workflow via **Actions tab**
 * Workflow badge shows deployment status ✅
-
----
-
