@@ -1,0 +1,28 @@
+name: 🚀 Deploy Website
+
+on:
+  push:
+    branches:
+      - main   # Runs only when code is pushed to main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest   # GitHub will use Ubuntu server to run
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v3  # Gets your repo code
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: 📦 Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: 🚀 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .   # Deploys everything in root folder
