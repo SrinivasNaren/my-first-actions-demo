@@ -63,6 +63,12 @@ Whenever we **push changes to GitHub**, the website is **automatically built and
 
 ---
 
+Project Update Summary
+
+In this update, I added a new About page (about.html) to the website and updated the homepage (index.html) to include a clickable link to it. I also modified the Python server (main.py) to serve the new page. With these changes, the CI/CD workflow automatically builds and deploys the updated site, so the live website now shows both the homepage and the new About page without any manual deployment
+
+---
+
 ### **Outcome**
 
 * A fully automated website deployment.
